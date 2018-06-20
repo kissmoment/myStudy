@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.pie{
+				width: 200px;
+				height: 200px;
+				background: yellowgreen;
+				border-radius: 50%;
+				margin: 100px auto;
+				background-image: linear-gradient(to right,transparent 50%,#655 0);
+			}
+			.pie:before{
+				content: '';
+				display: block;
+				margin-left: 50%;
+				height: 100%;
+				border-radius: 0 100% 100% 0 / 50%;
+				background-color: inherit;
+				transform-origin: left;
+				transform: rotate(.2turn); /*20%的比率*/
+				animation: spin .3s linear infinite,
+				           bg 6s step-end infinite;
+			}
+			@keyframes spin{
+				to(transform: rotate(.5turn))
+			}
+			@keyframes bg{
+				50%{background: #655;}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="pie"></div>
+	</body>
+</html>

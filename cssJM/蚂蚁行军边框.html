@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.div{
+				width: 600px;
+				height: 300px;
+				padding: 1em;
+				border: 1em solid transparent;
+				background: linear-gradient(#fff,#fff) padding-box,
+				            repeating-linear-gradient(-45deg,black 0,black 25%,white 0,white 50%) 0/ .6em .6em;
+				animation: ants 12s linear infinite;
+				
+			}
+			@keyframes ants{
+				to{background-position: 100%;}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="div">12345</div>
+	</body>
+</html>

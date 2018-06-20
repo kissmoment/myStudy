@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.div1{
+				width: 50px;
+				line-height: 40px;
+				text-align: center;
+				color: #fff;
+				position: relative;
+				
+			}
+			.div1:after{
+				content: '';
+				position: absolute;
+				background: blue;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				z-index: -1;
+				background-color: blue;
+				transform: skewX(-45deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="div1">test</div>
+	</body>
+</html>
